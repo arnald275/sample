@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+
+<util:list id="emailsArrayList" list-class="java.util.ArrayList">
+    <value>jackshaftoe@vagabond.org</value>
+    <value>eliza@thinkingmanscrumpet.org</value>
+    <value>vanhoek@pirate.org</value>
+    <value>d'Arcachon@nemesis.org</value>
+</util:list>
+<util:list id="emailsLinkedList" list-class="java.util.LinkedList">
+    <value>jackshaftoe@vagabond.org</value>
+    <value>eliza@thinkingmanscrumpet.org</value>
+    <value>vanhoek@pirate.org</value>
+    <value>d'Arcachon@nemesis.org</value>
+</util:list>
+<util:list id="emailsStack" list-class="java.util.Stack">
+    <value>jackshaftoe@vagabond.org</value>
+    <value>eliza@thinkingmanscrumpet.org</value>
+    <value>vanhoek@pirate.org</value>
+    <value>d'Arcachon@nemesis.org</value>
+</util:list>
+<util:list id="emailsVector" list-class="java.util.Vector">
+    <value>jackshaftoe@vagabond.org</value>
+    <value>eliza@thinkingmanscrumpet.org</value>
+    <value>vanhoek@pirate.org</value>
+    <value>d'Arcachon@nemesis.org</value>
+</util:list>
+
+
+</beans>

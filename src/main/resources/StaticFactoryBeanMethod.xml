@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+	<bean id="CONNECTION" class="java.sql.DriverManager" factory-method="getConnection" >
+		<constructor-arg index="0" value="jdbc:postgresql://localhost:5432/ssg_dev_roulette" />
+		<constructor-arg index="1" value="postgres" />
+		<constructor-arg index="2" value="Redim04$" />
+	</bean>
+</beans>
